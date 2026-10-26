@@ -20,6 +20,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -30,14 +31,20 @@
   <nav class="menu">
     <ul>
       <li><a href="#home">Home</a></li>
+      <li><a href="#contenido">Modificar contenido HTML</a></li>
     </ul>
   </nav>
 
   <main>
-    <section id="home">
-      <h2>Sobre el curso</h2>
-      <p>En este curso aprenderás a usar JavaScript para modificar el contenido,
-        los atributos y los estilos de los elementos HTML de una página web.</p>
+    <section id="contenido">
+      <h2>Modificar contenido HTML</h2>
+      <div class="ejemplo">
+        <p id="demo">Texto original del párrafo.</p>
+        <button onclick="cambiarContenido()">Cambiar texto</button>
+      </div>
+      <h3>Explicación</h3>
+      <p><code>document.getElementById("demo")</code> busca el elemento con id "demo"
+        y su propiedad <code>innerHTML</code> sustituye el contenido por el texto nuevo.</p>
     </section>
   </main>
 
