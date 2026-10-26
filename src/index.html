@@ -32,6 +32,7 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#contenido">Modificar contenido HTML</a></li>
+      <li><a href="#atributos">Modificar atributos HTML</a></li>
     </ul>
   </nav>
 
@@ -45,6 +46,26 @@
       <h3>Explicación</h3>
       <p><code>document.getElementById("demo")</code> busca el elemento con id "demo"
         y su propiedad <code>innerHTML</code> sustituye el contenido por el texto nuevo.</p>
+    </section>
+    <section id="home">
+      <h2>Sobre el curso</h2>
+      <p>En este curso aprenderás a usar JavaScript para modificar el contenido,
+        los atributos y los estilos de los elementos HTML de una página web.</p>
+    </section>
+    <section id="atributos">
+      <h2>Modificar atributos HTML</h2>
+      <div class="ejemplo">
+        <img id="foto" src="https://picsum.photos/id/1015/300/200" alt="Paisaje"><br>
+        <button onclick="cambiarImagen()">Cambiar imagen</button>
+      </div>
+      <div class="ejemplo">
+        <input id="clave" type="password" value="secreto123">
+        <button onclick="mostrarPassword()">Mostrar / ocultar</button>
+      </div>
+      <h3>Explicación</h3>
+      <p>Podemos asignar un valor nuevo a un atributo (<code>img.src</code>) o usar
+        <code>setAttribute()</code> para cambiar cualquier atributo por su nombre.
+      </p>
     </section>
   </main>
 
