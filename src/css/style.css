@@ -1,0 +1,12 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.cabecera { background: url("https://picsum.photos/id/180/1600/500") center / cover;
+  color: #fff; text-align: center; padding: 4rem 1rem; text-shadow: 0 2px 6px #000; }
+.menu ul { display: flex; list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
+.menu li { flex: 1; text-align: center; border-right: 1px solid #ccc; }
+.menu a { display: block; padding: 1rem; color: #222; text-decoration: none; }
+.menu a:hover { background: #eee; }
+main { max-width: 900px; margin: auto; padding: 2rem; min-height: 60vh; }
+section { margin-bottom: 3rem; }
+.ejemplo { border: 1px solid #ccc; border-radius: 6px; padding: 1rem; background: #fafafa; }
+.ejemplo button { margin: .5rem .5rem 0 0; }
+.pie { text-align: center; padding: 1.5rem; border-top: 1px solid #ccc; }

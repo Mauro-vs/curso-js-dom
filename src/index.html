@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Curso JS DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <header class="cabecera">
+    <h1>Curso de JavaScript: interacción con el DOM</h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contenido">Modificar contenido HTML</a></li>
+      <li><a href="#atributos">Modificar atributos HTML</a></li>
+      <li><a href="#estilos">Modificar estilos CSS</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Sobre el curso</h2>
+      <p>En este curso aprenderás a usar JavaScript para modificar el contenido,
+        los atributos y los estilos de los elementos HTML de una página web.</p>
+    </section>
+    <section id="contenido">
+      <h2>Modificar contenido HTML</h2>
+      <div class="ejemplo">
+        <p id="demo">Texto original del párrafo.</p>
+        <button onclick="cambiarContenido()">Cambiar texto</button>
+      </div>
+      <h3>Explicación</h3>
+      <p><code>document.getElementById("demo")</code> busca el elemento con id "demo"
+        y su propiedad <code>innerHTML</code> sustituye el contenido por el texto nuevo.</p>
+    </section>
+    <section id="atributos">
+      <h2>Modificar atributos HTML</h2>
+      <div class="ejemplo">
+        <img id="foto" src="https://picsum.photos/id/1015/300/200" alt="Paisaje"><br>
+        <button onclick="cambiarImagen()">Cambiar imagen</button>
+      </div>
+      <div class="ejemplo">
+        <input id="clave" type="password" value="secreto123">
+        <button onclick="mostrarPassword()">Mostrar / ocultar</button>
+      </div>
+      <h3>Explicación</h3>
+      <p>Podemos asignar un valor nuevo a un atributo (<code>img.src</code>) o usar
+        <code>setAttribute()</code> para cambiar cualquier atributo por su nombre.
+      </p>
+    </section>
+    <section id="estilos">
+      <h2>Modificar estilos CSS</h2>
+      <div class="ejemplo">
+        <p id="texto-estilo">¡Cambia mi aspecto!</p>
+        <button onclick="cambiarColor()">Color</button>
+        <button onclick="agrandar()">Tamaño</button>
+        <button onclick="alternarVisible()">Ocultar / mostrar</button>
+      </div>
+      <h3>Explicación</h3>
+      <p>Con <code>elemento.style.propiedad</code> cambiamos un estilo. Las propiedades
+        con guion se escriben en camelCase (font-size → fontSize).</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 Curso JS DOM · v1.0</p>
+  </footer>
+</body>
+
+</html>
