@@ -1,6 +1,15 @@
+const demo = document.getElementById('demo');
+const textoOriginal = demo.innerHTML; // guardamos el texto inicial
+
+// Usa lo que escriba el usuario o, si está vacío, un texto por defecto
 function cambiarContenido() {
-  document.getElementById('demo').innerHTML =
-    '¡Hola! Texto cambiado con JavaScript.';
+  const nuevo = document.getElementById('nuevoTexto').value.trim();
+  demo.innerHTML = nuevo || '¡Hola! Texto cambiado con JavaScript.';
+}
+
+// Devuelve el párrafo a su estado original
+function restaurarContenido() {
+  demo.innerHTML = textoOriginal;
 }
 
 // Cambia el atributo src (y alt) de la imagen para mostrar otra foto
